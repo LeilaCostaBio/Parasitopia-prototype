@@ -1,0 +1,190 @@
+/* Estilo para o botão Home */
+.home a {
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    position: relative; /* Habilita o posicionamento relativo */
+    top: -4px; /* Eleva o botão 4px para cima */
+}
+
+/* Efeito ao passar o mouse no botão Home */
+.home a:hover {
+    color: #121212; /* Cor do texto ao passar o mouse */
+    opacity: 0.8; /* Opacidade para efeito suave */
+}
+    main {
+        position: relative;
+        padding: 20px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+footer {
+    background-color: #121212; /* Cor de fundo do footer */
+    color: white; /* Texto branco */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px 0; /* Espaçamento interno do footer */
+    font-family: 'Archivo', sans-serif; /* Fonte do footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Centraliza os links do footer */
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os links */
+    margin: 10px 0;
+}
+
+footer a {
+    font-family: 'Silkscreen', cursive; /* Aplica a fonte Silkscreen ao link */
+    color: #e2e8f0; /* Cor dos links */
+    text-decoration: none; /* Remove a decoração padrão de sublinhado */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+footer a:hover {
+    opacity: 0.7; /* Efeito ao passar o mouse */
+}
+
+/* Estilo para o copyright à esquerda */
+footer p {
+    font-size: 0.9em; /* Menor tamanho de fonte */
+    margin: 0; /* Remover margens */
+    text-align: center;
+    width: 100%; /* Faz o p ocupar toda a largura */
+    padding-left: 20px; /* Espaço à esquerda */
+    color: #a89aac;
+}
+
+/* Estilo para a imagem no canto inferior direito */
+footer img.logo-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+/*Imagem de Enterobius vermicularis em Helmintos*/
+
+main img.helmex {
+    position: absolute;
+    top: 0;
+    right: 0; /* Alinha a imagem à direita */
+    width: 25%; /* Ajusta a largura da imagem */
+    height: auto;
+    z-index: 1;}
+    /* Estilo para os títulos em "Helmintos" */
+    .title-box {
+        background-color: #96BFD9; /* Cor de fundo da caixa */
+        padding: 10px 20px; /* Espaçamento interno ajustado para estilo pixelado */
+        display: inline-block;
+        position: absolute; /* Posicionamento absoluto para colocar no canto superior esquerdo */
+        top: 40px; /* Distância do topo da página */
+        left: 120px; /* Distância da borda esquerda */
+        border: 4px solid #121212; /* Borda grossa para efeito de pixel */
+        box-shadow: 4px 4px 0 #121212; /* Sombra pixelada para dar volume */
+        text-align: center;
+    }
+    
+    .title-box h1 {
+        font-family: 'Silkscreen', sans-serif; /* Fonte Silkscreen */
+        color: #121212; /* Cor do texto */
+        font-size: 24px; /* Ajuste do tamanho da fonte para combinar com pixel art */
+        margin: 0;
+        text-transform: uppercase; /* Letras maiúsculas para estilo retro */
+    }
+    /* Estilo para a lista de temas em "Helmintos" */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    margin-top: 120px; /* Espaço acima da lista para separar do título */
+    left: 120px; /* Distância da borda esquerda */
+}
+
+.link-list li {
+    margin-bottom: 16px; /* Espaçamento entre os itens da lista */
+}
+
+.link-list a {
+    font-family: 'Archivo', sans-serif; /* Fonte para os links */
+    font-style: italic; /* Deixa o texto em itálico */
+    font-size: 1.4em;
+    color: #96BFD9; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    -webkit-text-stroke: 1px #2F2F2F; /* Contorno ao redor das letras */
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #96BFD9;
+}
+/* Estilo do fantasma */
+main img.fantasma {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    width: 200px; /* Ajusta a largura da imagem */
+    height: auto;
+    border-radius: 8px;
+    z-index: 1; /* O fantasma está no nível 1 */
+}
+
+/* Estilos do balão de fala */
+.speech-bubble {
+    width: auto;
+    max-width: 25%;  /* Reduzindo a largura do balão */
+    height: auto;
+    background-color: #e2e8f0; /* Cor de fundo atualizada */
+    padding: 0px;  /* Reduzindo o padding para compactar o balão */
+    display: inline-block;
+    margin: 30px 30px 70px;
+    position: absolute;
+    bottom: 152px;  /* Aumentando a distância entre o balão e o fantasma */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow:
+      0 -10px 0 #e2e8f0,  /* topo */
+      0 -20px 0 #121212,
+      -10px 0 0 #e2e8f0,  /* esquerda */
+      -20px 0 0 #121212,
+      0 10px 0 #e2e8f0,   /* fundo */
+      0 20px 0 #121212,
+      10px 0 0 #e2e8f0,   /* direita */
+      20px 0 0 #121212,
+      -10px -10px 0 #121212,  /* canto superior esquerdo */
+      10px 10px 0 #121212,   /* canto superior direito */
+      -10px 10px 0 #121212,  /* canto inferior esquerdo */
+      10px -10px 0 #121212;  /* canto inferior direito */
+    font-family: 'Silkscreen', sans-serif; /* Fonte Silkscreen */
+    color: #121212; /* Cor do texto */
+    font-size: 12px; /* Reduz o tamanho da fonte para 12px */
+    text-align: center;
+    z-index: 8; /* Certifique-se de que o balão tenha um z-index maior que o do fantasma */
+}
+
+/* Cor Texto fonte da imagem, curvado */
+.curved-text {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    font-size: 0.9em;
+    position: absolute;
+    top: 300px;
+    right: 40px; /* Alinha a imagem à direita */
+}
+/* Muda a cor do texto no tema escuro */
+body.dark-mode .curved-text {
+color: #e2e8f0;
+}

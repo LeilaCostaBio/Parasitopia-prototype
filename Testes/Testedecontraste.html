@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuste de Tamanho de Fonte</title>
+    
+    <!-- Link para a fonte Archivo Narrow -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Define o tamanho da fonte inicial para o texto */
+        .resumo-texto {
+            font-family: 'Archivo Narrow', sans-serif; /* Aplica a fonte Archivo Narrow */
+            color: #121212;
+            text-align: justify;
+            margin: 20px;
+            font-size: 18px; /* Tamanho inicial */
+            line-height: 1.6;
+            font-weight: 100;
+        }
+
+        /* Botões para aumentar ou diminuir o tamanho da fonte */
+        .font-size-buttons button {
+            background-color: #96BFD9;
+            color: #121212;
+            font-family: 'Silkscreen', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 4px;
+        }
+
+        .font-size-buttons button:hover {
+            background-color: #9e3030;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="font-size-buttons">
+        <button id="smallFont">A -</button>
+        <button id="largeFont">A +</button>
+    </div>
+
+    <p class="resumo-texto">
+        Este é um exemplo de texto. Ao clicar nos botões, o tamanho da fonte irá aumentar ou diminuir. 
+        Você pode testar a funcionalidade de ajuste de tamanho da fonte para ver como ela se adapta à sua leitura.
+    </p>
+
+    <script>
+        // Captura os botões e o texto que terá o tamanho alterado
+        const smallFontButton = document.getElementById('smallFont');
+        const largeFontButton = document.getElementById('largeFont');
+        const resumoTexto = document.querySelector('.resumo-texto');
+
+        // Função para ajustar o tamanho da fonte
+        function adjustFontSize(amount) {
+            let currentSize = parseFloat(window.getComputedStyle(resumoTexto).fontSize); // Obtém o tamanho da fonte atual
+            let newSize = currentSize + amount; // Calcula o novo tamanho da fonte
+
+            // Impede que o tamanho da fonte seja menor que 12px ou maior que 36px
+            if (newSize >= 12 && newSize <= 36) {
+                resumoTexto.style.fontSize = newSize + 'px'; // Aplica o novo tamanho da fonte
+            }
+        }
+
+        // Adiciona os ouvintes de evento para os botões
+        smallFontButton.addEventListener('click', function() {
+            adjustFontSize(-2); // Diminui o tamanho da fonte em 2px
+        });
+
+        largeFontButton.addEventListener('click', function() {
+            adjustFontSize(2); // Aumenta o tamanho da fonte em 2px
+        });
+    </script>
+
+</body>
+</html>

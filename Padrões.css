@@ -1,0 +1,185 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e8f0;
+    transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden; /* Impede o scroll horizontal indesejado */
+}
+
+body.dark-mode {
+    background-color: #2F2F2F;
+    color: #e2e8f0;}
+
+header {
+    background-color: #121212;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header img {
+    max-width: 320px;
+    height: auto;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+/* Estilo para o botão Home */
+.home a {
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    position: relative; /* Habilita o posicionamento relativo */
+    top: -4px; /* Eleva o botão 4px para cima */
+}
+
+/* Efeito ao passar o mouse no botão Home */
+.home a:hover {
+    color: #121212; /* Cor do texto ao passar o mouse */
+    opacity: 0.8; /* Opacidade para efeito suave */
+}
+.parasitologia a {
+    color: #a89aac;
+}
+
+.helmintos a {
+    color: #96BFD9;
+}
+
+.protozoarios a {
+    color: #b5bf6b;
+}
+
+.artropodes a {
+    color: #F2B077;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.search-box button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #a89aac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    opacity: 0.8;
+}
+
+.theme-toggle {
+    background-color: transparent;
+    border: 1px solid #121212;
+    color: #121212;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #121212; /* Cor de fundo do footer */
+    color: white; /* Texto branco */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px 0; /* Espaçamento interno do footer */
+    font-family: 'Archivo', sans-serif; /* Fonte do footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box; /* Considera o padding na largura total */
+    position: relative;
+    z-index: 10; /* Assegura que o footer fique acima de outros elementos */
+}
+
+/* Centraliza os links do footer */
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os links */
+    margin: 10px 0;
+}
+
+footer a {
+    font-family: 'Silkscreen', cursive; /* Aplica a fonte Silkscreen ao link */
+    color: #e2e8f0; /* Cor dos links */
+    text-decoration: none; /* Remove a decoração padrão de sublinhado */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+footer a:hover {
+    opacity: 0.7; /* Efeito ao passar o mouse */
+}
+
+/* Estilo para o copyright à esquerda */
+footer p {
+    font-size: 0.9em; /* Menor tamanho de fonte */
+    margin: 0; /* Remover margens */
+    text-align: center;
+    width: 100%; /* Faz o p ocupar toda a largura */
+    padding-left: 20px; /* Espaço à esquerda */
+    color: #a89aac;
+    }
+
+/* Estilo para a imagem no canto inferior direito */
+footer img.logo-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; }

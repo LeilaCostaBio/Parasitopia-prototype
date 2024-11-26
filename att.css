@@ -1,0 +1,200 @@
+main {
+    position: relative;
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;}
+    
+    /* Estilo para o botão Home */
+.home a {
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    position: relative; /* Habilita o posicionamento relativo */
+    top: -4px; /* Eleva o botão 4px para cima */
+}
+
+/* Efeito ao passar o mouse no botão Home */
+.home a:hover {
+    color: #121212; /* Cor do texto ao passar o mouse */
+    opacity: 0.8; /* Opacidade para efeito suave */
+}
+
+.title-box {
+    background-color: #96BFD9; /* Cor de fundo da caixa */
+    padding: 10px 20px; /* Espaçamento interno ajustado para estilo pixelado */
+    display: inline-block;
+    position: absolute; /* Posicionamento absoluto para colocar no canto superior esquerdo */
+    top: 40px; /* Distância do topo da página */
+    left: 120px; /* Distância da borda esquerda */
+    border: 4px solid #121212; /* Borda grossa para efeito de pixel */
+    box-shadow: 4px 4px 0 #121212; /* Sombra pixelada para dar volume */
+    text-align: center;
+}
+
+.title-box h1 {
+    font-family: 'Silkscreen', sans-serif; /* Fonte Silkscreen */
+    font-style: italic;
+    color: #121212; /* Cor do texto */
+    font-size: 24px; /* Ajuste do tamanho da fonte para combinar com pixel art */
+    margin: 0;
+    text-transform: uppercase; /* Letras maiúsculas para estilo retro */}
+
+    .caminho {
+        font-family: 'Archivo', sans-serif;
+        color: #121212;
+        font-size: 0.9em;
+        margin-top: 120px;
+        margin-left: 100px; /* Alinhamento alinhado com title-box */
+        text-align: left;
+        padding: 10px;
+    }
+    
+    .caminho a {
+        color: #121212;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .caminho a:hover {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #96BFD9;
+    }
+    
+    body.dark-mode .caminho {
+        color: #96BFD9;}
+        body.dark-mode .caminho a {
+            color: #96BFD9;}
+
+                /* Estilo para o novo título "Vamos reforçar?" */
+.vamos-reforcar {
+    font-family: 'Silkscreen', cursive;
+    color: #BF4141; /* Cor vermelha */
+    font-size: 30px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 40px; /* Espaço acima do título */
+    text-shadow: 2px 2px 5px #121212;
+}
+
+/* Estilo para o novo título "Vamos reforçar?" */
+.vamos-reforcar {
+    font-family: 'Silkscreen', cursive;
+    color: #BF4141; /* Cor vermelha */
+    font-size: 30px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 40px; /* Espaço acima do título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.buttons-container {
+    display: flex; /* Coloca os botões lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Espaçamento em relação ao título */
+    margin-bottom: 40px;}
+
+.btn-atividade {
+    background-color: #BF4141;
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 3px solid #BF4141;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.btn-atividade:hover {
+    background-color: BF4141;
+    border-color: BF4141;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
+
+    .title-q-box {
+        background-color: BF4141;
+        display: inline-block; 
+        border: 4px solid #121212;
+        box-shadow: 4px 4px 0 #121212;
+        margin-top: 20px; 
+        margin-bottom: 10px;
+        margin-left: 100px;
+        text-align: center; 
+        width: fit-content;
+        border-radius: 8px;
+
+    }
+    
+    .title-q-box h3 {
+        font-family: 'Archivo', sans-serif;
+        font-size: 16px;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 6px;}
+
+        .question-container {
+            margin-right: 100px;
+            margin-left: 100px;
+            border-radius: 8px;
+            background-color: transparent;
+        }
+        
+        .question {
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            color: #121212;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        body.dark-mode .question {
+            color: #e2e8f0;
+            }
+        
+        .alternatives {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .alternatives li {
+            margin-bottom: 10px;
+        }
+        
+        .alternative {
+            background-color: transparent;
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: #121212;
+            text-align: justify;
+        }
+
+        body.dark-mode .alternative {
+            color: #e2e8f0;
+            }
+        
+        .alternative:hover {
+            background-color: #BF4141;
+            border-radius: 8px;
+        }
+        
+        .feedback {
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .alternatives img {
+            width: 20px;  /* Ajuste o tamanho da imagem conforme necessário */
+            height: 20px;
+            margin-right: 8px; /* Adiciona um pequeno espaço entre a imagem e o texto */}

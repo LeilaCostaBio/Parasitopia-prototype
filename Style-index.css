@@ -1,0 +1,129 @@
+main {
+    position: relative;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+main img.main-image { /*Imagem grande na página inicial*/
+    position: absolute;
+    top: 0;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    z-index: 1;
+}
+
+.enterobiusvermicularis { /*Imagem de Enterobius vermicularis em Helmintos*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    z-index: 1;}
+
+
+/* Estilo para as pequenas imagens abaixo de Trichuris */
+.small-images {
+    display: flex;
+    gap: 80px; /* Aumentando o espaço entre as imagens */
+    margin-top: 400px; /* Aumentando o espaço entre a imagem principal e as pequenas imagens */
+    justify-content: center; /* Alinha as imagens no centro */
+}
+
+.small-images .image-item {
+    text-align: center; /* Alinha o texto abaixo das imagens */
+}
+
+.small-images img {
+    width: 100px; /* Aumentando o tamanho das imagens pequenas */
+    height: auto;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.small-images .image-item p {
+    font-family: 'Silkscreen', cursive; /* Aplica a fonte Silkscreen */
+    color: #a89aac; /* Cor do texto */
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-size: 1.6em; /* Tamanho da fonte */
+    -webkit-text-stroke: 1px #2F2F2F; /* Contorno ao redor das letras */}
+
+ /* Estilos para o footer */
+ footer {
+    background-color: #121212; /* Cor de fundo do footer */
+    color: white; /* Texto branco */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px 0; /* Espaçamento interno do footer */
+    font-family: 'Archivo', sans-serif; /* Fonte do footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Centraliza os links do footer */
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os links */
+    margin: 10px 0;
+}
+
+footer a {
+    font-family: 'Silkscreen', cursive; /* Aplica a fonte Silkscreen ao link */
+    color: #e2e8f0; /* Cor dos links */
+    text-decoration: none; /* Remove a decoração padrão de sublinhado */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+footer a:hover {
+    opacity: 0.7; /* Efeito ao passar o mouse */
+}
+
+/* Estilo para o copyright à esquerda */
+footer p {
+    font-size: 0.9em; /* Menor tamanho de fonte */
+    margin: 0; /* Remover margens */
+    text-align: center;
+    width: 100%; /* Faz o p ocupar toda a largura */
+    padding-left: 20px; /* Espaço à esquerda */
+    color: #a89aac;
+    }
+
+/* Estilo para a imagem no canto inferior direito */
+footer img.logo-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+/* Estilo para a imagem "Eu e Tatá" */
+.eu-e-tata {
+    width: 30%; /* Ajusta o tamanho da imagem para 50% do tamanho original */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja um bloco (sem espaço extra abaixo) */
+    margin: 0 auto; /* Centraliza a imagem na tela */}
+    /* Cor Texto fonte da imagem, curvado */
+.curved-text {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    font-size: 0.9em;
+    position: absolute;
+    top: 100px;
+    left: 120px; /* Alinha a imagem à direita */
+    text-align: left;
+}
+/* Muda a cor do texto no tema escuro */
+body.dark-mode .curved-text {
+color: #e2e8f0;
+}

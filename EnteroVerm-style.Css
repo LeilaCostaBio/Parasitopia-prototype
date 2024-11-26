@@ -1,0 +1,431 @@
+/* Estilo para o botão Home */
+.home a {
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    position: relative; /* Habilita o posicionamento relativo */
+    top: -4px; /* Eleva o botão 4px para cima */
+}
+
+/* Efeito ao passar o mouse no botão Home */
+.home a:hover {
+    color: #121212; /* Cor do texto ao passar o mouse */
+    opacity: 0.8; /* Opacidade para efeito suave */
+}
+
+main {
+    position: relative;
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;}
+
+/*Imagem de Enterobius vermicularis em Helmintos*/
+
+main img.helmex {
+    position: absolute;
+    top: 0;
+    right: 0; /* Alinha a imagem à direita */
+    width: 25%; /* Ajusta a largura da imagem */
+    height: auto;
+    z-index: 1;}
+    /* Estilo para os títulos em "Helmintos" */
+
+    .title-box {
+        background-color: #96BFD9; /* Cor de fundo da caixa */
+        padding: 10px 20px; /* Espaçamento interno ajustado para estilo pixelado */
+        display: inline-block;
+        position: absolute; /* Posicionamento absoluto para colocar no canto superior esquerdo */
+        top: 40px; /* Distância do topo da página */
+        left: 120px; /* Distância da borda esquerda */
+        border: 4px solid #121212; /* Borda grossa para efeito de pixel */
+        box-shadow: 4px 4px 0 #121212; /* Sombra pixelada para dar volume */
+        text-align: center;
+    }
+
+    .title-box h1 {
+        font-family: 'Silkscreen', sans-serif; /* Fonte Silkscreen */
+        font-style: italic;
+        color: #121212; /* Cor do texto */
+        font-size: 24px; /* Ajuste do tamanho da fonte para combinar com pixel art */
+        margin: 0;
+        text-transform: uppercase; /* Letras maiúsculas para estilo retro */}
+        
+        /* Cor Texto fonte da imagem, curvado */
+        .curved-text {
+            font-family: 'Archivo', sans-serif;
+            color: #121212;
+            font-size: 0.9em;
+            position: absolute;
+            top: 300px;
+            right: 40px; /* Alinha a imagem à direita */
+        }
+        /* Muda a cor do texto no tema escuro */
+body.dark-mode .curved-text {
+    color: #e2e8f0;
+}
+
+.caminho {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    font-size: 0.9em;
+    margin-top: 120px;
+    margin-left: 100px; /* Alinhamento alinhado com title-box */
+    text-align: left;
+    padding: 10px;
+}
+
+.caminho a {
+    color: #121212;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.caminho a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #96BFD9;
+}
+
+body.dark-mode .caminho {
+    color: #96BFD9;}
+    body.dark-mode .caminho a {
+        color: #96BFD9;}
+
+        .menuresumo {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espaçamento entre audio-player e font-size-buttons */
+            background-color: #96BFD9;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+            margin-top: 20px;
+            margin-left: 100px;}
+
+/* Estilo do reprodutor de áudio */
+.audio-player {
+    align-items: center;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Espaço entre o texto e o reprodutor */
+    background-color: transparent;
+    display: flex;}
+
+.audio-player p {
+    font-size: 18px;
+    color: #121212;
+    font-family: 'Silkscreen', cursive;
+    margin: 0;
+}
+
+audio {
+    width: 300px; /* Define a largura do reprodutor */
+    border-radius: 5px;
+}
+
+ /* Estilo inicial para os textos */
+ .resumo-texto {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #121212;
+    text-align: justify;
+    margin-top: 120px; /* Define a distância de 20px do elemento anterior (imagem) */
+    padding-top: 20px; /* Espaço interno superior para ajustar ao conteúdo */
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 100;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-indent: 1.5em;
+}
+
+body.dark-mode .resumo-texto {
+    color: #e2e8f0;}
+
+    .resumo-texto-depois {
+        font-family: 'Archivo Narrow', sans-serif;
+        color: #121212;
+        text-align: justify;
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 100;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-indent: 1.5em;}
+
+        body.dark-mode .resumo-texto-depois {
+            color: #e2e8f0;}
+
+.resumo-texto-depois-img {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #121212;
+    text-align: justify;
+    margin-top: 20px; /* Define a distância de 20px da imagem */
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 100;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-indent: 1.5em;
+}
+
+body.dark-mode .resumo-texto-depois-img {
+    color: #e2e8f0;}
+
+/* Estilo da imagem */
+.imagem-resumo {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.font-label {
+    font-family: 'Silkscreen', sans-serif; /* Fonte Silkscreen */
+    color: #121212; /* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    margin-right: 10px; /* Espaço entre o texto e o primeiro botão */
+    align-self: center; /* Alinha verticalmente com os botões */
+}
+    .font-size-buttons {
+        display: flex;  /* Alinha os itens em linha horizontal */
+        gap: 10px;      /* Espaço de 10px entre os itens */
+        align-items: center; /* Garante que o parágrafo e os botões fiquem alinhados na mesma linha */
+    }
+    
+    .font-size-buttons button {
+        background-color: #96BFD9;
+        color: #121212;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        gap: 10px; /* Espaço entre o texto e o reprodutor */
+    }
+    
+    .font-size-buttons p {
+        gap: 5px;
+        font-size: 18px;
+        color: #121212;
+        font-family: 'Silkscreen', cursive;
+        margin: 0;}
+        
+
+        /* Botões para aumentar ou diminuir o tamanho da fonte */
+        .font-size-buttons button {
+            background-color: #96BFD9;
+            color: #121212;
+            font-family: 'Silkscreen', sans-serif;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 4px;
+        }
+
+        .font-size-buttons button:hover {
+            background-color: BF4141;
+            color: #fff;
+    }
+
+/* Estilo para o botão com a imagem do ícone e texto */
+.menu-toggle button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+/* Estilo para o texto ao lado do ícone */
+.menu-toggle .menu-text {
+    font-family: 'Silkscreen', sans-serif; /* Fonte Silkscreen */
+    color: #BF4141; /* Cor do texto */
+    margin-left: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+/* Estilo para o menu escondido */
+.hidden-menu {
+    display: none;
+    background-color: #96BFD9;
+    opacity: 50%;
+    padding: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adiciona margem para evitar que o menu sobreponha o conteúdo abaixo */
+    z-index: 5; /* Caso necessário, ajuste para que o menu não sobreponha o footer */
+}
+
+/* Exibe o menu quando a classe 'show' for adicionada */
+.hidden-menu.show {
+    display: flex;
+    top: 50px; /* Distância do topo */
+    left: 0; /* Garante que o menu ocupe a largura total */
+    width: 100%; /* Garante que o menu ocupe toda a largura da página */
+}
+
+/* Estilo para os itens do menu */
+.hidden-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.hidden-menu li {
+    margin: 10px;
+}
+
+.hidden-menu a {
+    text-decoration: none;
+    color: #121212;
+    opacity: 100%;
+    margin-right: 20px;
+    
+}
+
+.hidden-menu a:hover {
+    color: #BF4141;
+    opacity: 70%;
+}
+
+/* Estilo para a seção de pontos chaves */
+.pontos-chaves {
+    margin: 20px;
+}
+
+/* Título em fonte Silkscreen */
+.pontos-chaves-title {
+    font-family: 'Silkscreen', cursive;
+    color: #BF4141;
+    font-size: 24px;
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Lista em fonte Archivo */
+.pontos-chaves-list {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    list-style-type: disc; /* Estilo de lista com marcadores */
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Estilo de itens de lista */
+.pontos-chaves-list li {
+    margin-bottom: 20px; /* Espaço entre os itens da lista */
+}
+
+.pontos-chaves-list li span {
+    color: #BF4141; /* Define a cor do texto após o ":" */
+}
+
+/* Container da imagem */
+.pontos-chaves-image-container {
+    margin-top: 20px; /* Espaço acima da imagem */
+    text-align: center; /* Centraliza a imagem */
+}
+
+/* Estilo para a imagem */
+.pontos-chaves-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-width: 600px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 4px;
+}
+
+body.dark-mode .pontos-chaves-list {
+    color: #e2e8f0;}
+
+    /* Estilo para o novo título "Vamos reforçar?" */
+.vamos-reforcar {
+    font-family: 'Silkscreen', cursive;
+    color: #BF4141; /* Cor vermelha */
+    font-size: 30px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 40px; /* Espaço acima do título */
+    text-shadow: 2px 2px 5px #121212;
+}
+
+/* Estilo para o novo título "Vamos reforçar?" */
+.vamos-reforcar {
+    font-family: 'Silkscreen', cursive;
+    color: #BF4141; /* Cor vermelha */
+    font-size: 30px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 40px; /* Espaço acima do título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Container para os botões */
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+/* Estilo dos botões */
+.btn-atividade {
+    background-color: #BF4141; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-family: 'Archivo', sans-serif; /* Fonte Archivo */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 3px solid #BF4141; /* Borda que se mistura com o fundo */
+    border-radius: 5px; /* Borda arredondada */
+    margin-bottom: 40px;
+    cursor: pointer;
+    text-transform: uppercase; /* Transforma texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para dar o efeito pixel */
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+    text-decoration: none;
+}
+
+/* Efeito de hover para os botões */
+.btn-atividade:hover {
+    background-color: BF4141; /* Cor de fundo mais escura ao passar o mouse */
+    border-color: BF4141; /* Cor da borda mais escura */
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6); /* Sombra mais forte ao passar o mouse */
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox img {
+    width: 100%; /* A largura */
+    height: 100%; /* A altura */
+    object-fit: contain; /* A proporção*/
+    border-radius: 0; /* Remove bordas arredondadas */
+}
+
+.text-link {
+    color: #BF4141;
+    text-decoration: none;
+}
+
+body.dark-mode .text-link {
+    color: #96BFD9;;}
