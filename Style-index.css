@@ -14,8 +14,8 @@ main img.main-image { /*Imagem grande na página inicial*/
     position: absolute;
     top: 0;
     align-items: center;
-    width: 70%;
-    height: auto;
+    height: 50vh;
+    justify-content: space-around;
     z-index: 1;
 }
 
