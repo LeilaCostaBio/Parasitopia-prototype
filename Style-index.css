@@ -109,11 +109,13 @@ footer img.logo-footer {
 }
 /* Estilo para a imagem "Eu e Tatá" */
 .eu-e-tata {
-    width: 30%; /* Ajusta o tamanho da imagem para 50% do tamanho original */
+    width: 50%; /* Ajusta o tamanho da imagem para 50% do tamanho original */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que a imagem seja um bloco (sem espaço extra abaixo) */
-    margin: 0 auto; /* Centraliza a imagem na tela */}
-    /* Cor Texto fonte da imagem, curvado */
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;}
+
 .curved-text {
     font-family: 'Archivo', sans-serif;
     color: #121212;
