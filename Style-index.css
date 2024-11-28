@@ -129,3 +129,21 @@ footer img.logo-footer {
 body.dark-mode .curved-text {
 color: #e2e8f0;
 }
+
+.resumo-texto-depois-img {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #121212;
+    text-align: justify;
+    margin-top: 20px; /* Define a distância de 20px da imagem */
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 100;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    text-indent: 1.5em;
+}
+
+body.dark-mode .resumo-texto-depois-img {
+    color: #e2e8f0;}
