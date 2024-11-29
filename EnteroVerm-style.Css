@@ -418,8 +418,8 @@ body.dark-mode .pontos-chaves-list {
 }
 
 #lightbox img {
-    width: 100%; /* A largura */
-    height: 100%; /* A altura */
+    width: auto; /* A largura */
+    height: 80%; /* A altura */
     object-fit: contain; /* A proporção*/
     border-radius: 0; /* Remove bordas arredondadas */
 }
