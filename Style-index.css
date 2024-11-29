@@ -113,8 +113,7 @@ footer img.logo-footer {
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que a imagem seja um bloco (sem espaço extra abaixo) */
     border-radius: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;}
+    margin-top: 40px;}
 
 .curved-text {
     font-family: 'Archivo', sans-serif;
@@ -134,8 +133,6 @@ color: #e2e8f0;
     font-family: 'Archivo Narrow', sans-serif;
     color: #121212;
     text-align: justify;
-    margin-top: 20px; /* Define a distância de 20px da imagem */
-    padding-top: 20px;
     font-size: 18px;
     line-height: 1.6;
     font-weight: 100;
